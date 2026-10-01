@@ -1,4 +1,4 @@
-# Praxis Morgenlicht · Demo
+# Praxis für Naturheilkunde Anne Haag · Demo
 
 Eine statische, deutschsprachige Demo-Landingpage für eine Heilpraktikerpraxis. Die Website benötigt keinen Build-Schritt und ist für GitHub Pages vorbereitet.
 
@@ -19,7 +19,7 @@ Suche im Projekt nach `BITTE ERSETZEN` und aktualisiere mindestens:
 - Praxisname, Name, Anschrift, Ort und Kontaktdaten
 - Berufsbezeichnung, Erlaubnis, zuständige Behörde und Berufshaftpflicht
 - tatsächliche Leistungen und fachliche Qualifikationen
-- Impressum und Datenschutzerklärung
+- Impressum, Datenschutzerklärung und Haftungsausschluss
 - Demo-Bilder in `assets/images/`
 - Seitentitel, Beschreibung und ggf. eigene Domain
 
