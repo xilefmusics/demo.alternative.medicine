@@ -89,6 +89,7 @@
   .hero h1 em { color: #e4bd9d; }
   .hero-intro { color: rgba(255, 253, 249, .86); font-size: clamp(1.05rem, 1.7vw, 1.35rem); margin-top: 2rem; max-width: 510px; }
   .hero-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2.4rem; }
+  .hero-actions .text-link { margin-top: 0; }
   .button { align-items: center; border: 1px solid transparent; border-radius: 999px; display: inline-flex; font-size: .88rem; font-weight: 650; gap: .65rem; justify-content: center; min-height: 50px; padding: .9rem 1.35rem; transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease; }
   .button:hover { transform: translateY(-2px); }
   .button-light { background: var(--white); color: var(--forest); }
@@ -158,7 +159,13 @@
   .treatment-item { border-bottom: 1px solid var(--line); }
   .treatment-list > .treatment-item:last-child { border-bottom: 0; }
   .treatment-item summary { font-size: clamp(1rem, 1.4vw, 1.2rem); min-height: 4.1rem; padding-block: 1rem; }
-  .treatment-item summary > span { align-items: center; background: var(--sage-pale); border-radius: 50%; color: var(--forest); display: inline-flex; flex: 0 0 2rem; font-family: var(--sans); font-size: 1.25rem; font-weight: 300; height: 2rem; justify-content: center; width: 2rem; }
+  :is(.treatment-item, .faq-list details) summary > span { align-items: center; background: linear-gradient(145deg, #f4f6f0, var(--sage-pale)); border: 1px solid rgba(41, 72, 62, .12); border-radius: 50%; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .85), 0 2px 5px rgba(41, 72, 62, .05); color: var(--forest); display: inline-flex; flex: 0 0 2.5rem; font-size: 0; height: 2.5rem; justify-content: center; position: relative; transition: background .22s ease, border-color .22s ease, box-shadow .22s ease, color .22s ease; width: 2.5rem; }
+  :is(.treatment-item, .faq-list details) summary > span::before, :is(.treatment-item, .faq-list details) summary > span::after { background: currentColor; border-radius: 2px; content: ''; height: 1px; left: 50%; position: absolute; top: 50%; transition: transform .22s ease; width: .7rem; }
+  :is(.treatment-item, .faq-list details) summary > span::before { transform: translate(-50%, -50%); }
+  :is(.treatment-item, .faq-list details) summary > span::after { transform: translate(-50%, -50%) rotate(90deg); }
+  :is(.treatment-item, .faq-list details) summary:hover > span { background: var(--forest); border-color: var(--forest); box-shadow: 0 5px 12px rgba(29, 55, 47, .16), inset 0 1px 0 rgba(255, 255, 255, .12); color: var(--white); }
+  :is(.treatment-item[open], .faq-list details[open]) summary > span::before { transform: translate(-50%, -50%) rotate(45deg); }
+  :is(.treatment-item[open], .faq-list details[open]) summary > span::after { transform: translate(-50%, -50%) rotate(-45deg); }
   .treatment-copy { max-width: 720px; padding: 0 .25rem 1.5rem 0; }
   .treatment-copy p { font-size: .93rem; max-width: none; padding: 0; }
   .treatment-copy p + p { margin-top: .95rem; }
@@ -182,12 +189,9 @@
   .faq-list { background: var(--white); border: 1px solid rgba(37, 59, 52, .08); border-radius: var(--radius-lg); box-shadow: 0 14px 42px rgba(41, 72, 62, .055); padding: .3rem clamp(1rem, 3vw, 2rem); }
   .faq-list details:last-child { border-bottom: 0; }
   .faq-list summary { font-size: clamp(1rem, 1.4vw, 1.2rem); min-height: 4.1rem; padding-block: 1rem; }
-  .faq-list summary > span { align-items: center; background: var(--sage-pale); border-radius: 50%; color: var(--forest); display: inline-flex; flex: 0 0 2rem; font-family: var(--sans); font-size: 1.25rem; font-weight: 300; height: 2rem; justify-content: center; width: 2rem; }
   details { border-bottom: 1px solid var(--line); }
   summary { align-items: center; color: var(--forest); cursor: pointer; display: flex; font-family: var(--serif); font-size: 1.3rem; gap: 1rem; justify-content: space-between; list-style: none; padding: 1.25rem 0; }
   summary::-webkit-details-marker { display: none; }
-  summary span { color: var(--clay); font-family: var(--sans); font-size: 1.5rem; font-weight: 300; transition: transform .2s ease; }
-  details[open] summary span { transform: rotate(45deg); }
   details p { font-size: .93rem; max-width: 620px; padding: 0 3rem 1.45rem 0; }
 
   .contact-section { overflow: hidden; }
@@ -277,7 +281,7 @@
     .hero-content { padding-block: 5rem 6rem; }
     .hero h1 { font-size: clamp(3.4rem, 16vw, 5rem); }
     .hero-intro { font-size: 1rem; }
-    .hero-actions { align-items: stretch; flex-direction: column; max-width: 270px; }
+    .hero-actions { align-items: stretch; flex-direction: column; gap: 1rem; max-width: 270px; }
     .hero-note { margin-top: 2.5rem; }
     .section-padding { padding-block: 4.5rem; }
     .story-image img { border-radius: 1.25rem; }
