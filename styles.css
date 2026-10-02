@@ -141,7 +141,7 @@
   .card-link { bottom: 2rem; color: var(--forest); font-size: .82rem; font-weight: 650; left: 2rem; position: absolute; }
 
   .treatment-clusters { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); margin-top: clamp(3rem, 6vw, 5rem); }
-  .treatment-cluster { align-items: start; background: var(--white); border: 1px solid rgba(37, 59, 52, .08); border-radius: var(--radius-lg); box-shadow: 0 14px 42px rgba(41, 72, 62, .055); display: grid; gap: clamp(1.5rem, 4vw, 3.5rem); grid-template-columns: minmax(0, .85fr) minmax(0, 1.5fr); padding: clamp(1rem, 3vw, 2.25rem); }
+  .treatment-cluster { align-items: start; background: var(--white); border: 1px solid rgba(37, 59, 52, .08); border-radius: var(--radius-lg); box-shadow: 0 14px 42px rgba(41, 72, 62, .055); display: grid; gap: clamp(1.5rem, 4vw, 3.5rem); grid-template-columns: minmax(0, .85fr) minmax(0, 1.5fr); padding: clamp(1rem, 3vw, 2.25rem); padding-bottom: clamp(.6rem, 1.5vw, 1rem); }
   .treatment-cluster:nth-child(2) { background: #f0eee5; }
   .treatment-cluster:nth-child(2) .treatment-visual { order: 2; }
   .treatment-cluster:nth-child(2) .treatment-content { order: 1; }
@@ -156,6 +156,7 @@
   .treatment-heading h3 { color: var(--forest); font-family: var(--serif); font-size: clamp(1.55rem, 2.5vw, 2rem); letter-spacing: -.02em; line-height: 1.15; }
   .treatment-list { border-top: 1px solid var(--line); margin-top: 1.25rem; }
   .treatment-item { border-bottom: 1px solid var(--line); }
+  .treatment-list > .treatment-item:last-child { border-bottom: 0; }
   .treatment-item summary { font-size: clamp(1rem, 1.4vw, 1.2rem); min-height: 4.1rem; padding-block: 1rem; }
   .treatment-item summary > span { align-items: center; background: var(--sage-pale); border-radius: 50%; color: var(--forest); display: inline-flex; flex: 0 0 2rem; font-family: var(--sans); font-size: 1.25rem; font-weight: 300; height: 2rem; justify-content: center; width: 2rem; }
   .treatment-copy { max-width: 720px; padding: 0 .25rem 1.5rem 0; }
@@ -178,7 +179,10 @@
   .process-list p { color: rgba(255, 253, 249, .67); font-size: .93rem; margin-top: .45rem; max-width: 440px; }
 
   .faq-section { background: var(--cream); }
-  .faq-list { border-top: 1px solid var(--line); padding-top: .3rem; }
+  .faq-list { background: var(--white); border: 1px solid rgba(37, 59, 52, .08); border-radius: var(--radius-lg); box-shadow: 0 14px 42px rgba(41, 72, 62, .055); padding: .3rem clamp(1rem, 3vw, 2rem); }
+  .faq-list details:last-child { border-bottom: 0; }
+  .faq-list summary { font-size: clamp(1rem, 1.4vw, 1.2rem); min-height: 4.1rem; padding-block: 1rem; }
+  .faq-list summary > span { align-items: center; background: var(--sage-pale); border-radius: 50%; color: var(--forest); display: inline-flex; flex: 0 0 2rem; font-family: var(--sans); font-size: 1.25rem; font-weight: 300; height: 2rem; justify-content: center; width: 2rem; }
   details { border-bottom: 1px solid var(--line); }
   summary { align-items: center; color: var(--forest); cursor: pointer; display: flex; font-family: var(--serif); font-size: 1.3rem; gap: 1rem; justify-content: space-between; list-style: none; padding: 1.25rem 0; }
   summary::-webkit-details-marker { display: none; }
