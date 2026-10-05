@@ -44,5 +44,6 @@ Die Website verwendet keine externen Fonts, kein Analytics, keine Karten, keine 
 Die drei lokalen Demo-Fotos wurden für dieses Projekt generiert und können durch eigene Bilder ersetzt werden:
 
 - `assets/images/hero-praxis.jpg`
+- `assets/images/hero-praxis-salbei.jpg` (Startseitenmotiv mit Salbeistrauch)
 - `assets/images/kraeuter-notizbuch.jpg`
 - `assets/images/beratungsraum.jpg`
