@@ -165,7 +165,7 @@
   .card-link { bottom: 2rem; color: var(--forest); font-size: .82rem; font-weight: 650; left: 2rem; position: absolute; }
 
   .treatment-clusters { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); margin-top: clamp(3rem, 6vw, 5rem); }
-  .treatment-cluster { align-items: start; background: var(--white); border: 1px solid rgba(37, 59, 52, .08); border-radius: var(--radius-lg); box-shadow: 0 14px 42px rgba(41, 72, 62, .055); display: grid; gap: clamp(1.5rem, 4vw, 3.5rem); grid-template-columns: minmax(0, .85fr) minmax(0, 1.5fr); padding: clamp(1rem, 3vw, 2.25rem); padding-bottom: clamp(.6rem, 1.5vw, 1rem); }
+  .treatment-cluster { align-items: start; background: var(--white); border: 1px solid rgba(37, 59, 52, .08); border-radius: var(--radius-lg); box-shadow: 0 14px 42px rgba(41, 72, 62, .055); display: grid; gap: clamp(1.5rem, 4vw, 3.5rem); grid-template-columns: repeat(2, minmax(0, 1fr)); padding: clamp(1rem, 3vw, 2.25rem); padding-bottom: clamp(.6rem, 1.5vw, 1rem); }
   .treatment-cluster:nth-child(2) { background: #f0eee5; }
   .treatment-cluster:nth-child(2) .treatment-visual { order: 2; }
   .treatment-cluster:nth-child(2) .treatment-content { order: 1; }
